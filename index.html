@@ -1,0 +1,100 @@
+<html>
+
+<head>
+	<title>Worldnow API CMS</title>
+	<!-- Material Design fonts -->
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- Bootstrap Material Design -->
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap-material-design/dist/css/bootstrap-material-design.css">
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap-material-design/dist/css/ripples.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/dropdown-material/jquery.dropdown.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+</head>
+
+<body>
+
+	<div class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="javascript:void(0)">
+					<img src="assets/imgs/logo.png" width='95px' />
+				</a>
+			</div>
+			<div class="navbar-collapse collapse navbar-responsive-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a>About</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row main-row is-flex">
+			<div class="col-lg-3 col-md-3 col-xs-12 paper left-panel">
+
+				<div class="form-group">
+					<label class="control-label" for="inputFile2">Choose your XML file</label>
+					<input type="file" id="inputFile2" multiple="">
+					<input type="text" readonly="" class="form-control" placeholder="File path...">
+				</div>
+
+				<div class="form-group">
+					<label for="category">Category</label>
+					<select id="category" class="form-control">
+						<option value="Apple fritter">News</option>
+						<option value="Croissant">Weather</option>
+						<option value="Donut">Sports</option>
+						<option value="Financier">Developer</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label for="category">Status</label>
+					<select id="category" class="form-control">
+						<option value="Apple fritter">Live</option>
+						<option value="Croissant">Draft</option>
+						<option value="Donut">Delete</option>
+						<option value="Financier">Developer</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label for="category">Content Classification</label>
+					<select id="category" class="form-control">
+						<option value="Apple fritter">Live</option>
+						<option value="Croissant">Draft</option>
+						<option value="Donut">Delete</option>
+						<option value="Financier">Developer</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<a href="javascript:void(0)" class="btn btn-raised btn-lg btn-primary btn-import">Import</a>
+				</div>
+
+			</div>
+
+			<div class="col-lg-9 col-md-9 col-xs-12 paper right-panel">
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="assets/bootstrap-material-design/dist/js/material.js"></script>
+	<script type="text/javascript" src="assets/bootstrap-material-design/dist/js/ripples.js"></script>
+	<script type="text/javascript" src="assets/dropdown-material/jquery.dropdown.js"></script>
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+</body>
+
+</html>

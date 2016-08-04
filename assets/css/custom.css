@@ -1,0 +1,94 @@
+.paper {
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+.left-panel {
+    min-height: calc(100vh - 110px);
+}
+.right-panel {
+    min-height: calc(100vh - 110px);
+}
+.material-icons {
+    color: #757575;
+}
+.btn-import {
+    width: 100%;
+}
+.main-row {
+    padding: 30px 20px 0px 30px;
+}
+.navbar {
+    margin-bottom: 0px;
+}
+
+/*
+* CUSTOM SCROLLBAR
+*/
+::-webkit-scrollbar {
+    width:9px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    background:rgba(0,0,0,0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    background:rgba(0,0,0,0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background:rgba(0,0,0,0.4);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background:rgba(0,0,0,0.05);
+}
+/* END CUSTOM SCROLLBAR */
+
+/*
+* MAKE FLEX TO MAKE TWO COL SAME HEIGHT
+*/
+.row.is-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row.is-flex> [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+* And with max cross-browser enabled.
+* Nobody should ever write this by hand.
+* Use a preprocesser with autoprefixing.
+*/
+
+.row.is-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.row.is-flex> [class*='col-'] {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+/* END FLEX COL */
