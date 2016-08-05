@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=RobotoDraft:500);
 .paper {
     background: #fff;
     border-radius: 2px;
@@ -24,38 +25,119 @@
 .navbar {
     margin-bottom: 0px;
 }
+.mapping-panel {
+    height: auto;
+}
+.log-panel {
+    min-height: calc(100vh - 161px);
+}
+.frame {
+    border: 1px solid gray;
+    position: relative;
+    padding: 10px;
+}
+.field-validate {
+    padding: 10px;
+    display: inline-block;
+    margin-left: 10px;
+}
+.field-validate .form-group {
+    margin: 0px;
+}
+h4.headline {
+    margin: 20px 0px;
+}
+select[data-dropdownjs][disabled]+ .dropdownjs> input[readonly] {
+    cursor: not-allowed;
+}
+.log-frame {
+    width: 100%;
+    min-height: calc(100vh - 250px);
+    overflow-y: auto;
+    background-color: #f1f0f0;
+    padding: 10px;
+}
+.alert.alert-warning {
+    background-color: #FF9800;
+    color: rgba(255, 255, 255, 0.84);
+}
+.preview-panel {
+    min-height: calc(100vh - 460px);
+}
+.input-preview {
+    border: 1px solid #ccc;
+    min-height: 32px;
+    max-height: 110px;
+    width: 90%;
+    padding: 7px;
+    padding-left: 10px;
+    white-space: nowrap;
+    overflow: auto;
+}
+.input-preview-body {
+    width: 100%;
+    height: 100px;
+    overflow: auto;
+    padding: 7px;
+    padding-left: 10px;
+}
+.loading {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    background-color: rgba(99, 98, 98, 0.25);
+}
+.loader-panel {
+    padding: 50px;
+    padding-top: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -150px;
+    width: 300px;
+    height: 180px;
+    text-align: center;
+    font-weight: bolder;
+}
+.loader-panel span {
+    font-weight: bolder;
+    font-size: 18px;
+}
 
 /*
 * CUSTOM SCROLLBAR
 */
+
 ::-webkit-scrollbar {
-    width:9px;
+    width: 9px;
+    height: 6px;
 }
-
 ::-webkit-scrollbar-track {
-    -webkit-border-radius:5px;
-    border-radius:5px;
-    background:rgba(0,0,0,0.1);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.1);
 }
-
 ::-webkit-scrollbar-thumb {
-    -webkit-border-radius:5px;
-    border-radius:5px;
-    background:rgba(0,0,0,0.2);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.2);
 }
-
 ::-webkit-scrollbar-thumb:hover {
-    background:rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(0, 0, 0, 0.05);
 }
 
-::-webkit-scrollbar-thumb:window-inactive {
-    background:rgba(0,0,0,0.05);
-}
 /* END CUSTOM SCROLLBAR */
+
 
 /*
 * MAKE FLEX TO MAKE TWO COL SAME HEIGHT
 */
+
 .row.is-flex {
     display: flex;
     flex-wrap: wrap;
@@ -79,6 +161,7 @@
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 .row.is-flex> [class*='col-'] {
     display: -webkit-box;
@@ -91,4 +174,78 @@
     -ms-flex-direction: column;
     flex-direction: column;
 }
+
 /* END FLEX COL */
+
+
+/* MATERIAL SPINNER */
+
+.spinner {
+    -webkit-animation: rotation 1.4s linear infinite;
+    animation: rotation 1.4s linear infinite;
+    font-family: 'RobotoDraft', sans-serif;
+}
+@-webkit-keyframes rotation {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
+    }
+}
+@keyframes rotation {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
+    }
+}
+.circle {
+    stroke-dasharray: 187;
+    stroke-dashoffset: 0;
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+    -webkit-animation: turn 1.4s ease-in-out infinite;
+    animation: turn 1.4s ease-in-out infinite;
+}
+@-webkit-keyframes turn {
+    0% {
+        stroke-dashoffset: 187;
+    }
+    50% {
+        stroke-dashoffset: 46.75;
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg);
+    }
+    100% {
+        stroke-dashoffset: 187;
+        -webkit-transform: rotate(450deg);
+        transform: rotate(450deg);
+    }
+}
+@keyframes turn {
+    0% {
+        stroke-dashoffset: 187;
+    }
+    50% {
+        stroke-dashoffset: 46.75;
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg);
+    }
+    100% {
+        stroke-dashoffset: 187;
+        -webkit-transform: rotate(450deg);
+        transform: rotate(450deg);
+    }
+}
+svg {
+    stroke: #009688;
+}
+
+/* END SPINNER */

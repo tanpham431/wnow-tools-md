@@ -17,7 +17,19 @@
 </head>
 
 <body>
-
+	<!-- Spinner -->
+	<div class="loading" style="display: none">
+		<div class="loader-panel paper">
+			<div class="row">
+				<div class="col-lg-12">
+					<svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"><circle class="circle" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg>
+				</div>
+				<div class="col-lg-12" style="padding-top: 25px;">
+					<span>Processing</span>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -85,6 +97,123 @@
 			</div>
 
 			<div class="col-lg-9 col-md-9 col-xs-12 paper right-panel">
+				<div class="row main-row is-flex">
+					<div class="col-lg-8 col-md-8 col-xs-12 paper" style="min-height: calc(100vh - 161px)">
+						<div class="col-lg-12 col-md-12 col-xs-12 mapping-panel">
+							<div class="row">
+								<div class="col-lg-12 col-md-12 col-xs-12">
+									<h4 class="headline"><b>Validation criteria</b></h4>
+									<div class="row">
+										<!-- start row of 3 fields -->
+										<div class="col-lg-3 col-md-3 col-xs-12 field-validate">
+											<div class="form-group">
+												<label for="category">Import XML</label>
+												<select id="category" class="form-control">
+													<option value="Apple fritter">Live</option>
+													<option value="Croissant">Draft</option>
+													<option value="Donut">Delete</option>
+													<option value="Financier">Developer</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label for="category">Frankly CMS</label>
+												<select id="story" class="form-control" disabled="disabled">
+													<option value="option">Story</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-lg-3 col-md-3 col-xs-12 field-validate">
+											<div class="form-group">
+												<label for="category">Import XML</label>
+												<select id="category" class="form-control">
+													<option value="Apple fritter">Live</option>
+													<option value="Croissant">Draft</option>
+													<option value="Donut">Delete</option>
+													<option value="Financier">Developer</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label for="category">Frankly CMS</label>
+												<select id="headline" class="form-control" disabled="disabled">
+													<option value="option">Headline</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-lg-3 col-md-3 col-xs-12 field-validate">
+											<div class="form-group">
+												<label for="category">Import XML</label>
+												<select id="category" class="form-control">
+													<option value="Apple fritter">Live</option>
+													<option value="Croissant">Draft</option>
+													<option value="Donut">Delete</option>
+													<option value="Financier">Developer</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label for="category">Frankly CMS</label>
+												<select id="bodyText" class="form-control" disabled="disabled">
+													<option value="option">BodyText</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<!-- end row of 3 fields -->
+								</div>
+								<!-- end col 12-->
+							</div>
+							<div class="row">
+								<div class="col-lg-6 col-lg-offset-3 col-md-12 col-xs-12">
+									<div class="btn-group btn-group-justified btn-group-raised btn-primary">
+										<a href="javascript:void(0)" class="btn ">Clear</a>
+										<a href="javascript:void(0)" class="btn ">OK</a>
+										<a href="javascript:void(0)" class="btn ">Cancel</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-12 col-md-12 col-xs-12 preview-panel">
+							<div class="row">
+								<div class="col-lg-12">
+									<h4 class="headline"><b>Preview Area</b></h4>
+									<div class="row">
+										<div class="form-group">
+											<label for="category">Headline</label>
+											<div class="input-preview">fsdfsdf sdfsdf</div>
+										</div>
+										<div class="form-group">
+											<label for="category">Content Classification</label>
+											<div class="input-preview">fsdfsdf sdfsdfsd</div>
+										</div>
+										<div class="form-group">
+											<label for="category">Body</label>
+											<div class="input-preview-body">fsdfd sdfsdf sdfsd f sdff sdf</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-xs-12 paper log-panel">
+						<div class="col-lg-12">
+							<div class="row">
+								<div class="col-lg-12">
+									<h4 class="headline"><b>Log action</b></h4>
+									<div class="log-frame">
+										<div class="alert alert-dismissible alert-danger">
+											<strong>Error!</strong> Your story has a mistake.
+										</div>
+										<div class="alert alert-dismissible alert-success">
+											<strong>Well done!</strong> Your story has been created.
+										</div>
+										<div class="alert alert-dismissible alert-warning">
+											<strong>Warning!</strong> Missing something
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
