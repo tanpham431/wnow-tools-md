@@ -111,6 +111,24 @@ hr {
     border: 0;
     border-top: 1px solid #eee;
 }
+.close-btn {
+    min-width: 20px!important;
+    height: 20px!important;
+    width: 20px!important;
+    float: right;
+    margin-right: 7px!important;
+    margin-top: 2px!important;
+}
+.close-btn i {
+    font-size: 15px;
+    color: #fff!important;
+}
+.expand-btn {
+    min-width: 35px!important;
+    height: 35px!important;
+    width: 35px!important;
+    float: right;
+}
 
 /*
 * CUSTOM SCROLLBAR
