@@ -129,6 +129,17 @@ hr {
     width: 35px!important;
     float: right;
 }
+.hiddenSelect {
+    position: absolute;
+    margin-top: 5px;
+    padding: 0px;
+    padding-left: 0px;
+    width: 165px;
+    font-size: 19px;
+    font-weight: 300;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+;
+}
 
 /*
 * CUSTOM SCROLLBAR

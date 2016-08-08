@@ -58,7 +58,7 @@
 
 				<div class="form-group">
 					<label class="control-label" for="inputFile2">Choose your XML file</label>
-					<input type="file" id="inputFile2" multiple="">
+					<input type="file" id="file" multiple="">
 					<input type="text" readonly="" class="form-control" placeholder="File path...">
 				</div>
 
@@ -110,16 +110,13 @@
 										<div class="col-lg-3 col-md-3 col-xs-12 field-validate">
 											<div class="form-group">
 												<label for="category">Import XML</label>
-												<select id="category" class="form-control">
-													<option value="Apple fritter">Live</option>
-													<option value="Croissant">Draft</option>
-													<option value="Donut">Delete</option>
-													<option value="Financier">Developer</option>
+												<div class="hiddenSelect"></div>
+												<select id="field-story-select" class="form-control">
 												</select>
 											</div>
 											<div class="form-group">
 												<label for="category">Frankly CMS</label>
-												<select id="story" class="form-control" disabled="disabled">
+												<select class="form-control" disabled="disabled">
 													<option value="option">Story</option>
 												</select>
 											</div>
@@ -128,10 +125,6 @@
 											<div class="form-group">
 												<label for="category">Import XML</label>
 												<select id="category" class="form-control">
-													<option value="Apple fritter">Live</option>
-													<option value="Croissant">Draft</option>
-													<option value="Donut">Delete</option>
-													<option value="Financier">Developer</option>
 												</select>
 											</div>
 											<div class="form-group">
@@ -144,11 +137,7 @@
 										<div class="col-lg-3 col-md-3 col-xs-12 field-validate">
 											<div class="form-group">
 												<label for="category">Import XML</label>
-												<select id="category" class="form-control">
-													<option value="Apple fritter">Live</option>
-													<option value="Croissant">Draft</option>
-													<option value="Donut">Delete</option>
-													<option value="Financier">Developer</option>
+												<select id="bodyText" class="form-control">
 												</select>
 											</div>
 											<div class="form-group">
@@ -295,6 +284,9 @@
 	<script type="text/javascript" src="assets/bootstrap-material-design/dist/js/material.js"></script>
 	<script type="text/javascript" src="assets/bootstrap-material-design/dist/js/ripples.js"></script>
 	<script type="text/javascript" src="assets/dropdown-material/jquery.dropdown.js"></script>
+	<script type="text/javascript" src="assets/js/ui.js"></script>
+	<script type="text/javascript" src="assets/js/xml.js"></script>
+	<script type="text/javascript" src="assets/js/file.js"></script>
 	<script type="text/javascript" src="assets/js/custom.js"></script>
 </body>
 
